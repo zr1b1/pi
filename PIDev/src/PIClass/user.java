@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.*;
 
+
 /**
  *
  * @author HP
@@ -17,9 +18,9 @@ public class user implements Comparator<user> {
     protected String username;
     protected String password;
     protected String mail;
-    protected String date_n;
+    protected Date date_n;
 
-    public user(int id_user, String username, String password, String mail, String date_n) 
+    public user(int id_user, String username, String password, String mail, Date date_n) 
     {
         this.id_user= id_user;
         this.username = username;
@@ -65,11 +66,11 @@ public class user implements Comparator<user> {
         this.mail = mail;
     }
 
-    public String getDate_n() {
+    public Date getDate_n() {
         return date_n;
     }
 
-    public void setDate_n(String date_n) {
+    public void setDate_n(Date date_n) {
         this.date_n = date_n;
     }
     

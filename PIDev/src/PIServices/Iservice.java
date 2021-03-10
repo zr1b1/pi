@@ -19,5 +19,7 @@ public interface Iservice<T>
     public List<T> afficher();
     public List<T> userListe();
     public List<T> TrieParUsername();
-    //public void recherche(T t);
+    public List<T> recherche(String Xusername);
+    //public void PasswordOublié(T t);
+    //public void Crypt(T t);
 }

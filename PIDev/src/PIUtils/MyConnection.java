@@ -7,6 +7,7 @@ package PIUtils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,6 +17,10 @@ import java.util.logging.Logger;
  * @author mohamedbouslah
  */
 public class MyConnection {
+
+    public static PreparedStatement prepareStatement(String requete) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public String url = "jdbc:mysql://127.0.0.1:3306/pi";
     public String login="root";
     public String pwd="";

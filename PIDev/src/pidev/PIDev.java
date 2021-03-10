@@ -6,8 +6,7 @@
 package pidev;
 
 import PIClass.*;
-import PIServices.serviceprev;
-import PIServices.serviceuser;
+import PIServices.*;
 import PIUtils.MyConnection;
 
 /**
@@ -18,11 +17,16 @@ public class PIDev {
 
     public static void main(String[] args) 
     {
-        MyConnection mc =new MyConnection();
-        serviceuser su = new serviceuser();
-        serviceprev sp = new serviceprev();
-        user u1= new user(1,"A", "azety", "mourad.zribi@esprit.tn", "13/05/99");
-        prev p1= new prev(7,"AwA","azerty", "xxx@yyy.z","01/01/1990" ,"Z");
+        MyConnection  mc = new MyConnection();
+        
+        servicecoach  sc = new servicecoach();
+        servicenutri  sn = new servicenutri();
+        servicepsycho sp = new servicepsycho();
+        servicesimple ss = new servicesimple();
+        
+        //user u1= new user("Mourad", "azety", "mourad.zribi@esprit.tn", "13/05/99");
+        //prev p1= new prev(1778,"IkI","azerty", "bbb@yyy.z","01/01/1990" ,"A","a8b1");
+        //Int.valueOf(id_user)
         //su.Ajouter(u1);
         //su.Supprimer(u1);
         //su.Modifier(u1);
@@ -30,13 +34,9 @@ public class PIDev {
         //System.out.println(" == ");
         //su.TrieParUsername().forEach(System.out::println);
         //su.recherche(u1);
+        //les users 
         //___________________________________________________
-        //sp.Ajouter(p1);
-        //sp.Supprimer(p1);
-        //sp.Modifier(p1);
-        //sp.afficher().forEach(System.out::println);
-        //System.out.println(" == ");
-        //sp.TrieParUsername().forEach(System.out::println);
+        
     }
     
 }
