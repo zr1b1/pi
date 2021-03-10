@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.ProfilPsyController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0ae22d5" height="171.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebe9c470" height="229.0" layoutY="171.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#edit" prefHeight="41.0" prefWidth="72.0" text="Edit">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="461.0" layoutY="78.0" mnemonicParsing="false" onAction="#search" prefHeight="49.0" prefWidth="84.0" text="Search">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSignOut" layoutY="131.0" mnemonicParsing="false" onAction="#signout" prefHeight="41.0" prefWidth="72.0" text="Sign out">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbUsername" layoutX="182.0" layoutY="25.0" prefHeight="33.0" prefWidth="201.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMail" layoutX="182.0" layoutY="69.0" prefHeight="33.0" prefWidth="201.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbId" layoutX="503.0" layoutY="9.0" prefHeight="33.0" prefWidth="96.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDate" layoutX="182.0" layoutY="114.0" prefHeight="33.0" prefWidth="201.0" text="Label">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="33.0" text="Username :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="77.0" text="Mail :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="122.0" text="Date of birth">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="17.0" text="Id :">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDelete" layoutX="455.0" layoutY="139.0" mnemonicParsing="false" onAction="#delete" text="Delete account">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
